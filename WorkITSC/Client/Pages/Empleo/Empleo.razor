@@ -1,0 +1,14 @@
+﻿@page "/verempleos"
+
+
+<h3>Ver Empleo</h3>
+
+<div class="mb-3">
+    <a class="btn btn-info" href= "empleos/crear"> Agregar Empleo</a>
+</div>
+
+@code {
+
+    [Parameter] public int EmpleoId { get; set; }
+    [Parameter] public string? NombreEmpleo { get; set; }
+}

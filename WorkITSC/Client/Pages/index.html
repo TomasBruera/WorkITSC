@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open To Work</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body >
+      <nav class="navbar navbar-expand-lg bg-primary d-flex d-flex justify-content-around">
+        <div class="d-flex align-items-center ">
+          <a class="navbar-brand  ml-n3 " href="#">
+            <img src="/Imagenes/Fondo.jpeg" alt="Bootstrap" width="50px" height="40px">
+          </a>
+          <h2 class="m-0 ml-2 color ">Open To Work</h2>
+        </div>
+        <div >
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link color m-2 " href="#">Iniciar Busqueda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color m-2" href="#">Lista de Empleos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color m-2" href="#">Estimación Salarial</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link color m-2" href="#">Precios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+            <form class="container-fluid justify-content-start">
+                <button class="btn btn-light color_btn" type="button">Ingresar</button>
+                <button class="btn btn-sm color" type="button">Registro</button>
+              </form>
+        </div>
+      </nav>
+
+      <div class="BarraBusqueda parallax-promo ">
+  <h1 >Encuentre hoy <span class="color_btn">su nuevo</span> empleo</h1>
+  <h4>Miles de empleos en los sectores de informatica, la ingeniería y la tecnologia te están esperando.</h4>
+  <form class="d-flex justify-content-center ">
+    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+    <input class="form-control form-control-sm" type="search" placeholder="Ubicacion" aria-label="Buscar" style="flex-basis: 50%;">
+    <button class="btn btn-primary btn-largo my-2 my-sm-0" type="submit">Buscar</button>
+  </form>
+</div>
+
+<div  class="container-fluid filtro ">
+  <div class="sidebar">
+    <h4>Filtrar</h4>
+    <p style="font-weight: bold;">Ubicación</p>
+    <form>
+      <input type="radio" id="patron1" name="patron1" value="patron1">
+      <label for="patron1">Cerca de mi</label><br>
+      <input type="radio" id="patron2" name="patron2" value="patron2">
+      <label for="patron2">Trabajo Remoto</label><br>
+      <input type="radio" id="patron3" name="patron3" value="patron3">
+      <label for="patron3">Lugar Exacto</label><br>
+      <input type="radio" id="patron4" name="patronL" value="patron4">
+      <label for="patron4">A 15 km</label><br>
+      <input type="radio" id="patron5" name="patronL" value="patron5">
+      <label for="patron5">A 30 km</label><br>
+      <input type="radio" id="patron6" name="patronL" value="patron6">
+      <label for="patron6">A 50 km</label><br>
+    </form>
+    <br>
+    <p style="font-weight: bold;">Salario </p>
+    <div class="button-column">
+      <button class="custom-button">Por Hora <input type="radio" id="RD_dia" name="patronBus" value="patron7"></button>
+      <button class="custom-button">Por Mes <input type="radio" id="RD_mes" name="patronBus" value="patron8"></button>
+      <button class="custom-button">Por Año <input type="radio" id="RD_año" name="patronBus" value="patron9"></button>
+    </div>
+
+    <input type="radio" id="patron10" name="patronCs" value="patronCash">
+    <label for="patron10">Cualquiera</label><br>
+    <input type="radio" id="patron11" name="patronCs" value="patronCash">
+    <label for="patron11"> > 30000k </label><br>
+    <input type="radio" id="patron12" name="patronCs" value="patronCash">
+    <label for="patron12"> > 50000k </label><br>
+    <input type="radio" id="patron13" name="patronCs" value="patronCash">
+    <label for="patron13"> > 80000k </label><br>
+    <input type="radio" id="patron14" name="patronCs" value="patronCash">
+    <label for="patron14"> > 100000k </label><br>
+    <br>
+
+    <p style="font-weight: bold;">Fecha de Publicación</p>
+    <input type="radio" id="patron15" name="patronTm" value="patronTime">
+    <label for="patron15"> Todo el Tiempo </label><br>
+    <input type="radio" id="patron16" name="patronTm" value="patronTime">
+    <label for="patron16"> Ultimas 24hs </label><br>
+    <input type="radio" id="patron17" name="patronTm" value="patronTime">
+    <label for="patron17">  Ultimos 3 dias </label><br>
+    <input type="radio" id="patron18" name="patronTm" value="patronTime">
+    <label for="patron18"> Ultimos 7 dias </label><br>
+    <br>
+
+    <p style="font-weight: bold;">Experiencia Laboral</p>
+    <input type="radio" id="patron19" name="patronEx" value="patronExp">
+    <label for="patron19"> Todo el Tiempo </label><br>
+    <input type="radio" id="patron20" name="patronEx" value="patronExp">
+    <label for="patron20"> Ultimas 24hs </label><br>
+    <input type="radio" id="patron21" name="patronEx" value="patronExp">
+    <label for="patron21">  Ultimos 3 dias </label><br>
+
+    <p style="font-weight: bold;">Tiempo de Empleo</p>
+    <input type="radio" id="patron22" name="patronTE" value="patronTEmp">
+    <label for="patron15"> Todo el Tiempo </label><br>
+    <input type="radio" id="patron23" name="patronTE" value="patronTEmp">
+    <label for="patron16"> Ultimas 24hs </label><br>
+    <input type="radio" id="patron24" name="patronTE" value="patronTEmp">
+    <label for="patron17">  Ultimos 3 dias </label><br>
+
+  </div >
+
+
+  <div class="maxWidth" >
+    <div class="barraBusquedaCards marginLR">
+      <h1>34 resultados</h1>
+      <div class="dropdown customDropDown ">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Filtrar Por
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Opción 1</a></li>
+          <li><a class="dropdown-item" href="#">Opción 2</a></li>
+          <li><a class="dropdown-item" href="#">Opción 3</a></li>
+        </ul>
+      </div> 
+    </div>
+    <div class="marginLR">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center image-container centered-image">
+              <img src="/Imagenes/ImagenEmpresa1.png" alt="Imagen del trabajo" class="rounded">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Linear company</h6>
+              <h5 class="card-title">Software Engineer</h5>
+              <div class="ordenar" >
+                <p class="card-text mb-1">Bruselas</p>
+                <p class="card-text mb-1">FullTime</p>
+                <p class="card-text mb-1">$50-55k</p>
+                <p class="card-text mb-1">Hace 29 min.</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta placeat, quod provident labore pariatur non molestias, natus fugiat saepe ullam perferendis et sit doloribus voluptatum fuga corporis aliquid odio!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center image-container centered-image">
+              <img src="/Imagenes/ImagenEmpresa1.png" alt="Imagen del trabajo" class="rounded">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Notion</h6>
+              <h5 class="card-title">Junior UI Designer</h5>
+              <div class="ordenar" >
+                <p class="card-text mb-1">Madrid</p>
+                <p class="card-text mb-1">FullTime</p>
+                <p class="card-text mb-1">$30-32k</p>
+                <p class="card-text mb-1">Hace 1 dia.</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta placeat, quod provident labore pariatur non molestias, natus fugiat saepe ullam perferendis et sit doloribus voluptatum fuga corporis aliquid odio!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center image-container centered-image">
+              <img src="/Imagenes/ImagenEmpresa1.png" alt="Imagen del trabajo" class="rounded">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Spline Studio</h6>
+              <h5 class="card-title">Technical Support Engineer</h5>
+              <div class="ordenar" >
+                <p class="card-text mb-1">United States</p>
+                <p class="card-text mb-1">FullTime</p>
+                <p class="card-text mb-1">$50-55k</p>
+                <p class="card-text mb-1">Hace 1 dia.</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta placeat, quod provident labore pariatur non molestias, natus fugiat saepe ullam perferendis et sit doloribus voluptatum fuga corporis aliquid odio!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center image-container centered-image">
+              <img src="/Imagenes/ImagenEmpresa1.png" alt="Imagen del trabajo" class="rounded">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Raycast Corp</h6>
+              <h5 class="card-title">Product Designer</h5>
+              <div class="ordenar" >
+                <p class="card-text mb-1">London</p>
+                <p class="card-text mb-1">FullTime</p>
+                <p class="card-text mb-1">$40-42k</p>
+                <p class="card-text mb-1">Hace 2 dias.</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta placeat, quod provident labore pariatur non molestias, natus fugiat saepe ullam perferendis et sit doloribus voluptatum fuga corporis aliquid odio!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center image-container centered-image">
+              <img src="/Imagenes/ImagenEmpresa1.png" alt="Imagen del trabajo" class="rounded">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Loom</h6>
+              <h5 class="card-title">Copywriter(Growth)</h5>
+              <div class="ordenar" >
+                <p class="card-text mb-1">London</p>
+                <p class="card-text mb-1">FullTime</p>
+                <p class="card-text mb-1">$38-40k</p>
+                <p class="card-text mb-1">Hace 3 dias.</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta placeat, quod provident labore pariatur non molestias, natus fugiat saepe ullam perferendis et sit doloribus voluptatum fuga corporis aliquid odio!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center image-container centered-image">
+              <img src="/Imagenes/ImagenEmpresa1.png" alt="Imagen del trabajo" class="rounded">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Trainline Group</h6>
+              <h5 class="card-title">Senior UX/UI Designer</h5>
+              <div class="ordenar" >
+                <p class="card-text mb-1">Paris</p>
+                <p class="card-text mb-1">FullTime</p>
+                <p class="card-text mb-1">$38-40k</p>
+                <p class="card-text mb-1">Hace 4 dias.</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta placeat, quod provident labore pariatur non molestias, natus fugiat saepe ullam perferendis et sit doloribus voluptatum fuga corporis aliquid odio!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  </div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

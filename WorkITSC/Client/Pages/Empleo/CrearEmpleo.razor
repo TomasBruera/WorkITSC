@@ -1,0 +1,31 @@
+﻿@page "/empleos/crear"
+
+<h3>CrearEmpleo</h3>
+
+<EditForm Model="EmpleoDTO" OnValidSubmit="Crear">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class= "mb-3">
+        <label>Titulo:</label>
+        <div>
+            <InputText class="form-control" @bind-Value = "@EmpleoDTO.Title"></InputText>
+            <ValidationMessage For = "@(() => EmpleoDTO.Title)"></ValidationMessage>
+        </div>
+
+        
+    </div>
+
+    <button class="btn btn-success" type="submit">Guardar Cambios</button>
+
+</EditForm>
+
+@code {
+
+    [Parameter] public int EmpleoId { get; set; }
+
+    private EmpleoDTO EmpleoDTO = new EmpleoDTO();
+
+    private void Crear()
+    {
+        Console.WriteLine("Ejecuntando metodo crear");
+    }
+}
